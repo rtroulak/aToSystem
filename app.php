@@ -1,6 +1,21 @@
 <?php
 
 session_start();
+
+$db_host = "host";
+$db_user = "user"; //database username
+$db_pass = "pass"; //database password
+$db_name = "name"; //database name
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
 if(!isset($_SESSION['username'])){
     header("Location:index.php");
 }
