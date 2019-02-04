@@ -8,7 +8,8 @@ Date: 4/1/2019
 body{
     margin:0;
     color:#6a6f8c;
-    background:url(http://atoinsurance.gr/wp-content/uploads/2017/03/ATOBACKGROUND.png) repeat center;
+    /*background:url(http://atoinsurance.gr/wp-content/uploads/2017/03/ATOBACKGROUND.png) repeat center;*/
+    background-color: rgba(83,51,76,1);
     font:600 16px/18px 'Open Sans',sans-serif;
 }
 *,:after,:before{box-sizing:border-box}
@@ -17,6 +18,7 @@ body{
 a{color:inherit;text-decoration:none}
 .login-wrap{
     width:100%;
+    height:auto;
     margin:auto;
     margin-top: 30px;
     max-width:525px;
@@ -26,8 +28,10 @@ a{color:inherit;text-decoration:none}
     /*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
 }
 .login-html{
-    width:100%;
-    height:150%;
+    width:200%;
+    height:auto;
+    left: -50%;
+    margin: auto;
     position:absolute;
     padding:90px 70px 50px 70px;
     background:rgba(83,51,76,.9);
@@ -97,6 +101,22 @@ a{color:inherit;text-decoration:none}
     text-security:circle;
     -webkit-text-security:circle;
 }
+
+.login-form .group .inputdropdown,
+.login-form .group .button{
+    width:100%;
+    color:gray;
+    background-color: #5B4B50;
+    display:block;
+}
+.login-form .group .inputdropdown,
+.login-form .group .button{
+    border:none;
+    padding:15px 20px;
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+}
+
 .login-form .group .label{
     color:#aaa;
     font-size:12px;

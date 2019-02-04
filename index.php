@@ -1,5 +1,11 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 
+echo $_COOKIE[$cookie_username]." - ".$_COOKIE[$cookie_password];
+unset($_COOKIE['username']);
+unset($_COOKIE['password']);
+$_COOKIE['username']='';
+$_COOKIE['password']='';
 session_start();
 
 
@@ -14,7 +20,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>aToSystem</title>
-
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -23,6 +29,7 @@ session_start();
 <body>
 <div class="login-wrap">
     <div class="login-html">
+        <img style="display: block;margin: 0 auto;" width="600px" height="150px" src="assets/images/whitelogo.png">
         <h1 style="color:white" align="center">ATOSystem</h1>
         <br>
         <br>
